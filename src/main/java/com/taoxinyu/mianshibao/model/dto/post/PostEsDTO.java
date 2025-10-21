@@ -8,6 +8,7 @@ import lombok.Data;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
 
@@ -18,8 +19,8 @@ import java.util.List;
 /**
  * 帖子 ES 包装类
  *
- * @author <a href="https://github.com/liTAO-pao">北理陶鑫宇</a>
- * @from <a href="https://TAO-pao.icu">北理工自动化</a>
+ * @author <a href="https://github.com/litaoxinyu">北理陶鑫宇</a>
+ * @from <a href="https://taoxinyu.icu">北理工自动化</a>
  **/
 // todo 取消注释开启 ES（须先配置 ES）
 //@Document(indexName = "post")
@@ -97,7 +98,7 @@ public class PostEsDTO implements Serializable {
         BeanUtils.copyProperties(post, postEsDTO);
         String tagsStr = post.getTags();
         if (StringUtils.isNotBlank(tagsStr)) {
-            postEsDTO.setTags(JSONUtil.toList(tagsStr, String.class));
+            postEsDTO.setTags(JSONUtil.toList(JSONUtil.parseArray(tagsStr), String.class));
         }
         return postEsDTO;
     }

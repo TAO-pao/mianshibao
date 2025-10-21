@@ -8,8 +8,8 @@ import java.lang.annotation.Target;
 /**
  * 权限校验
  *
- * @author <a href="https://github.com/liTAO-pao">北理陶鑫宇</a>
- * @from <a href="https://TAO-pao.icu">北理工自动化</a>
+ * @author <a href="https://github.com/litaoxinyu">北理陶鑫宇</a>
+ * @from <a href="https://taoxinyu.icu">北理工自动化</a>
  */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)

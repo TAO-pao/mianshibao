@@ -16,8 +16,8 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 /**
  * 请求响应日志 AOP
  *
- * @author <a href="https://github.com/liTAO-pao">北理陶鑫宇</a>
- * @from <a href="https://TAO-pao.icu">北理工自动化</a>
+ * @author <a href="https://github.com/litaoxinyu">北理陶鑫宇</a>
+ * @from <a href="https://taoxinyu.icu">北理工自动化</a>
  **/
 @Aspect
 @Component
@@ -27,7 +27,7 @@ public class LogInterceptor {
     /**
      * 执行拦截
      */
-    @Around("execution(* com.TAO-pao.mianshibao.controller.*.*(..))")
+    @Around("execution(* com.taoxinyu.mianshibao.controller.*.*(..))")
     public Object doInterceptor(ProceedingJoinPoint point) throws Throwable {
         // 计时
         StopWatch stopWatch = new StopWatch();

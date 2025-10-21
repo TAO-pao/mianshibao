@@ -12,8 +12,8 @@ import org.springframework.beans.BeanUtils;
 /**
  * 帖子视图
  *
- * @author <a href="https://github.com/liTAO-pao">北理陶鑫宇</a>
- * @from <a href="https://TAO-pao.icu">北理工自动化</a>
+ * @author <a href="https://github.com/litaoxinyu">北理陶鑫宇</a>
+ * @from <a href="https://taoxinyu.icu">北理工自动化</a>
  */
 @Data
 public class PostVO implements Serializable {
@@ -107,7 +107,7 @@ public class PostVO implements Serializable {
         }
         PostVO postVO = new PostVO();
         BeanUtils.copyProperties(post, postVO);
-        postVO.setTagList(JSONUtil.toList(post.getTags(), String.class));
+        postVO.setTagList(JSONUtil.toList(JSONUtil.parseArray(post.getTags()), String.class));
         return postVO;
     }
 }

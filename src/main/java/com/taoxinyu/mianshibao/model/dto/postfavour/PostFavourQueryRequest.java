@@ -10,8 +10,8 @@ import lombok.EqualsAndHashCode;
 /**
  * 帖子收藏查询请求
  *
- * @author <a href="https://github.com/liTAO-pao">北理陶鑫宇</a>
- * @from <a href="https://TAO-pao.icu">北理工自动化</a>
+ * @author <a href="https://github.com/litaoxinyu">北理陶鑫宇</a>
+ * @from <a href="https://taoxinyu.icu">北理工自动化</a>
  */
 @Data
 @EqualsAndHashCode(callSuper = true)

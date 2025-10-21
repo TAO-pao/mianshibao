@@ -1,6 +1,7 @@
 package com.taoxinyu.mianshibao.controller;
 
 import cn.hutool.core.io.FileUtil;
+import cn.hutool.core.io.file.FileNameUtil;
 import com.taoxinyu.mianshibao.common.ResultUtils;
 import com.taoxinyu.mianshibao.model.dto.file.UploadFileRequest;
 import com.taoxinyu.mianshibao.model.entity.User;
@@ -26,8 +27,8 @@ import org.springframework.web.multipart.MultipartFile;
 /**
  * 文件接口
  *
- * @author <a href="https://github.com/liTAO-pao">北理陶鑫宇</a>
- * @from <a href="https://TAO-pao.icu">北理工自动化</a>
+ * @author <a href="https://github.com/litaoxinyu">北理陶鑫宇</a>
+ * @from <a href="https://taoxinyu.icu">北理工自动化</a>
  */
 @RestController
 @RequestMapping("/file")
@@ -94,7 +95,7 @@ public class FileController {
         // 文件大小
         long fileSize = multipartFile.getSize();
         // 文件后缀
-        String fileSuffix = FileUtil.getSuffix(multipartFile.getOriginalFilename());
+        String fileSuffix = FileNameUtil.getSuffix(multipartFile.getOriginalFilename());
         final long ONE_M = 1024 * 1024L;
         if (FileUploadBizEnum.USER_AVATAR.equals(fileUploadBizEnum)) {
             if (fileSize > ONE_M) {

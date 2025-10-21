@@ -2,10 +2,10 @@ package com.taoxinyu.mianshibao.controller;
 
 import com.taoxinyu.mianshibao.common.ResultUtils;
 import com.taoxinyu.mianshibao.model.dto.postthumb.PostThumbAddRequest;
-import com.taoxinyu.mianshibao.model.entity.User;
 import com.taoxinyu.mianshibao.common.BaseResponse;
 import com.taoxinyu.mianshibao.common.ErrorCode;
 import com.taoxinyu.mianshibao.exception.BusinessException;
+import com.taoxinyu.mianshibao.model.entity.User;
 import com.taoxinyu.mianshibao.service.PostThumbService;
 import com.taoxinyu.mianshibao.service.UserService;
 import javax.annotation.Resource;
@@ -19,8 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * 帖子点赞接口
  *
- * @author <a href="https://github.com/liTAO-pao">北理陶鑫宇</a>
- * @from <a href="https://TAO-pao.icu">北理工自动化</a>
+ * @author <a href="https://github.com/litaoxinyu">北理陶鑫宇</a>
+ * @from <a href="https://taoxinyu.icu">北理工自动化</a>
  */
 @RestController
 @RequestMapping("/post_thumb")

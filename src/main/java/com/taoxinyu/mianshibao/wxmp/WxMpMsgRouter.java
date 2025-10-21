@@ -15,8 +15,8 @@ import org.springframework.context.annotation.Configuration;
 /**
  * 微信公众号路由
  *
- * @author <a href="https://github.com/liTAO-pao">北理陶鑫宇</a>
- * @from <a href="https://TAO-pao.icu">北理工自动化</a>
+ * @author <a href="https://github.com/litaoxinyu">北理陶鑫宇</a>
+ * @from <a href="https://taoxinyu.icu">北理工自动化</a>
  */
 @Configuration
 public class WxMpMsgRouter {

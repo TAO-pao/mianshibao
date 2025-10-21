@@ -26,8 +26,8 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * 微信公众号相关接口
  *
- * @author <a href="https://github.com/liTAO-pao">北理陶鑫宇</a>
- * @from <a href="https://TAO-pao.icu">北理工自动化</a>
+ * @author <a href="https://github.com/litaoxinyu">北理陶鑫宇</a>
+ * @from <a href="https://taoxinyu.icu">北理工自动化</a>
  **/
 @RestController
 @RequestMapping("/")
@@ -109,7 +109,7 @@ public class WxMpController {
         wxMenuButton1SubButton1.setType(MenuButtonType.VIEW);
         wxMenuButton1SubButton1.setName("跳转页面");
         wxMenuButton1SubButton1.setUrl(
-                "https://TAO-pao.icu");
+                "https://taoxinyu.icu");
         wxMenuButton1.setSubButtons(Collections.singletonList(wxMenuButton1SubButton1));
 
         // 菜单二
@@ -125,7 +125,7 @@ public class WxMpController {
         WxMenuButton wxMenuButton3SubButton1 = new WxMenuButton();
         wxMenuButton3SubButton1.setType(MenuButtonType.VIEW);
         wxMenuButton3SubButton1.setName("编程学习");
-        wxMenuButton3SubButton1.setUrl("https://TAO-pao.icu");
+        wxMenuButton3SubButton1.setUrl("https://taoxinyu.icu");
         wxMenuButton3.setSubButtons(Collections.singletonList(wxMenuButton3SubButton1));
 
         // 设置主菜单
